@@ -19,6 +19,7 @@ namespace Teamproject1
     {
         MySQL mysql = new MySQL("127.0.0.1", "sys", "root", "rlathgml72");
         //bool result = false;
+        int tem;
         public showfashionform3()
         {
             InitializeComponent();
@@ -28,7 +29,6 @@ namespace Teamproject1
         {
             MySqlConnection connection = mysql.Connection();
             string sql;
-            int tem = 26;
             if ((-4 <= tem) && (tem <= 0))
             {
                 sql = "select * from people_main where -4<=temperature && temperature<=0";
@@ -305,7 +305,7 @@ namespace Teamproject1
             //날짜
             string Date = m.Substring(0, 18);
             //평균 온도
-            string tem = xn.ChildNodes[1]["temp"].InnerText;
+            tem = Convert.ToInt32(xn.ChildNodes[1]["temp"].InnerText);
             //월            
             string Month = m.Substring(6, 2);
         }
