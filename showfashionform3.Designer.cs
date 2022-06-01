@@ -37,10 +37,9 @@
             this.showother = new System.Windows.Forms.Button();
             this.toprecommand = new System.Windows.Forms.Button();
             this.bottomrecommand = new System.Windows.Forms.Button();
-            this.accessory = new System.Windows.Forms.Button();
+            this.outer = new System.Windows.Forms.Button();
+            this.extradesign = new System.Windows.Forms.RichTextBox();
             this.extra = new System.Windows.Forms.Button();
-            this.question = new System.Windows.Forms.Button();
-            this.extradesign = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.expicture1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.expicture2)).BeginInit();
             this.SuspendLayout();
@@ -61,7 +60,7 @@
             // 
             // showfashioncopy
             // 
-            this.showfashioncopy.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.showfashioncopy.Font = new System.Drawing.Font("카페24 써라운드", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.showfashioncopy.Location = new System.Drawing.Point(35, 83);
             this.showfashioncopy.Margin = new System.Windows.Forms.Padding(4);
             this.showfashioncopy.Name = "showfashioncopy";
@@ -72,11 +71,11 @@
             // 
             // showfasioncopy2
             // 
-            this.showfasioncopy2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.showfasioncopy2.Font = new System.Drawing.Font("카페24 써라운드 에어 ", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.showfasioncopy2.Location = new System.Drawing.Point(35, 202);
             this.showfasioncopy2.Margin = new System.Windows.Forms.Padding(4);
             this.showfasioncopy2.Name = "showfasioncopy2";
-            this.showfasioncopy2.Size = new System.Drawing.Size(395, 28);
+            this.showfasioncopy2.Size = new System.Drawing.Size(395, 29);
             this.showfasioncopy2.TabIndex = 3;
             this.showfasioncopy2.Text = "오늘같은 날씨엔 이 옷이 딱이에요!";
             this.showfasioncopy2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -103,7 +102,7 @@
             // 
             // showother
             // 
-            this.showother.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.showother.Font = new System.Drawing.Font("카페24 써라운드", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.showother.Location = new System.Drawing.Point(52, 653);
             this.showother.Margin = new System.Windows.Forms.Padding(4);
             this.showother.Name = "showother";
@@ -114,8 +113,8 @@
             // 
             // toprecommand
             // 
-            this.toprecommand.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.toprecommand.Location = new System.Drawing.Point(90, 754);
+            this.toprecommand.Font = new System.Drawing.Font("카페24 써라운드", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.toprecommand.Location = new System.Drawing.Point(76, 1011);
             this.toprecommand.Margin = new System.Windows.Forms.Padding(4);
             this.toprecommand.Name = "toprecommand";
             this.toprecommand.Size = new System.Drawing.Size(151, 114);
@@ -126,8 +125,8 @@
             // 
             // bottomrecommand
             // 
-            this.bottomrecommand.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.bottomrecommand.Location = new System.Drawing.Point(314, 751);
+            this.bottomrecommand.Font = new System.Drawing.Font("카페24 써라운드", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bottomrecommand.Location = new System.Drawing.Point(314, 1006);
             this.bottomrecommand.Margin = new System.Windows.Forms.Padding(4);
             this.bottomrecommand.Name = "bottomrecommand";
             this.bottomrecommand.Size = new System.Drawing.Size(142, 119);
@@ -136,62 +135,45 @@
             this.bottomrecommand.UseVisualStyleBackColor = true;
             this.bottomrecommand.Click += new System.EventHandler(this.bottomrecommand_Click);
             // 
-            // accessory
+            // outer
             // 
-            this.accessory.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.accessory.Location = new System.Drawing.Point(528, 749);
-            this.accessory.Margin = new System.Windows.Forms.Padding(4);
-            this.accessory.Name = "accessory";
-            this.accessory.Size = new System.Drawing.Size(148, 119);
-            this.accessory.TabIndex = 9;
-            this.accessory.Text = "악세사리 추천";
-            this.accessory.UseVisualStyleBackColor = true;
-            this.accessory.Click += new System.EventHandler(this.accessory_Click);
-            // 
-            // extra
-            // 
-            this.extra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.extra.Location = new System.Drawing.Point(626, 685);
-            this.extra.Margin = new System.Windows.Forms.Padding(4);
-            this.extra.Name = "extra";
-            this.extra.Size = new System.Drawing.Size(94, 28);
-            this.extra.TabIndex = 10;
-            this.extra.Text = "더보기";
-            this.extra.UseVisualStyleBackColor = true;
-            this.extra.Click += new System.EventHandler(this.extra_Click);
-            // 
-            // question
-            // 
-            this.question.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.question.Location = new System.Drawing.Point(249, 953);
-            this.question.Margin = new System.Windows.Forms.Padding(4);
-            this.question.Name = "question";
-            this.question.Size = new System.Drawing.Size(276, 55);
-            this.question.TabIndex = 11;
-            this.question.Text = "너가 한번 골라 볼래?";
-            this.question.UseVisualStyleBackColor = true;
+            this.outer.Font = new System.Drawing.Font("카페24 써라운드", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.outer.Location = new System.Drawing.Point(542, 1006);
+            this.outer.Margin = new System.Windows.Forms.Padding(4);
+            this.outer.Name = "outer";
+            this.outer.Size = new System.Drawing.Size(148, 119);
+            this.outer.TabIndex = 9;
+            this.outer.Text = "아우터 추천";
+            this.outer.UseVisualStyleBackColor = true;
+            this.outer.Click += new System.EventHandler(this.outer_Click);
             // 
             // extradesign
             // 
-            this.extradesign.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.extradesign.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.extradesign.Location = new System.Drawing.Point(76, 1046);
-            this.extradesign.Margin = new System.Windows.Forms.Padding(4);
+            this.extradesign.Location = new System.Drawing.Point(68, 754);
             this.extradesign.Name = "extradesign";
-            this.extradesign.Size = new System.Drawing.Size(630, 122);
-            this.extradesign.TabIndex = 12;
-            this.extradesign.Text = "#데일리룩 #학교수업들으러갈때 #하객룩 #데이트룩 #제주도룩 #집앞마실룩 #영화관갈때 #집앞공원갈때";
-            this.extradesign.UseVisualStyleBackColor = true;
+            this.extradesign.Size = new System.Drawing.Size(622, 233);
+            this.extradesign.TabIndex = 13;
+            this.extradesign.Text = "";
+            // 
+            // extra
+            // 
+            this.extra.Font = new System.Drawing.Font("카페24 써라운드 에어 ", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.extra.Location = new System.Drawing.Point(606, 690);
+            this.extra.Name = "extra";
+            this.extra.Size = new System.Drawing.Size(97, 37);
+            this.extra.TabIndex = 14;
+            this.extra.Text = "추천의상";
+            this.extra.UseVisualStyleBackColor = true;
+            this.extra.Click += new System.EventHandler(this.extra_Click);
             // 
             // showfashionform3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(771, 1260);
-            this.Controls.Add(this.extradesign);
-            this.Controls.Add(this.question);
+            this.ClientSize = new System.Drawing.Size(771, 1138);
             this.Controls.Add(this.extra);
-            this.Controls.Add(this.accessory);
+            this.Controls.Add(this.extradesign);
+            this.Controls.Add(this.outer);
             this.Controls.Add(this.bottomrecommand);
             this.Controls.Add(this.toprecommand);
             this.Controls.Add(this.showother);
@@ -219,9 +201,8 @@
         private System.Windows.Forms.Button showother;
         private System.Windows.Forms.Button toprecommand;
         private System.Windows.Forms.Button bottomrecommand;
-        private System.Windows.Forms.Button accessory;
+        private System.Windows.Forms.Button outer;
+        private System.Windows.Forms.RichTextBox extradesign;
         private System.Windows.Forms.Button extra;
-        private System.Windows.Forms.Button question;
-        private System.Windows.Forms.Button extradesign;
     }
 }

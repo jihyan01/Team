@@ -21,14 +21,11 @@ namespace Teamproject1
             InitializeComponent();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void graghform_Load(object sender, EventArgs e)
         {
-        string query = "http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=1135056000";
+            string query = "http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=1135056000";
+
+
 
             //먼저 클라이언트에서 request 한다!
             WebRequest wr = WebRequest.Create(query);
@@ -56,12 +53,23 @@ namespace Teamproject1
             //데이터 처리
             XmlNode xn = xd["rss"]["channel"]["item"]["description"]["body"];
 
+            //평균온도
+            string avg_t = "평균:" + xn.ChildNodes[1]["temp"].InnerText;
+            //최고온도
+            string high_t = "최고:" + xn.ChildNodes[0]["temp"].InnerText;
+            //최저온도
+            string low_t = "최저:" + xn.ChildNodes[3]["temp"].InnerText;
+
+            weatherinfo.Text = "#" + avg_t + " ";
+            weatherinfo.Text += "#" + high_t + " ";
+            weatherinfo.Text += "#" + low_t + " ";
+
             //원래 차트에 그려져 있던 내용 초기화
             chart1.Series[0].Points.Clear();
 
             //차트 디자인 설정
             chart1.ChartAreas[0].AxisX.Minimum = 0;
-            chart1.ChartAreas[0].AxisX.Maximum = 8;
+            chart1.ChartAreas[0].AxisX.Maximum = 6;
 
             //그리드 해제
             chart1.ChartAreas[0].AxisX.MajorGrid.Enabled = false;
@@ -72,7 +80,7 @@ namespace Teamproject1
 
             CustomLabel[] cl = new CustomLabel[9];
 
-            for (int i = 0; i < 9; i++)
+            for (int i = 0; i < 7; i++)
             {
                 double graph_temp = double.Parse(xn.ChildNodes[i]["temp"].InnerText);
                 //기온으로 그래프 그리기
@@ -88,9 +96,18 @@ namespace Teamproject1
         private void graphformbutton_Click(object sender, EventArgs e)
         {
             this.Hide();
-            mainform1 mainform2= new mainform1();
+            mainform1 mainform2 = new mainform1();
             mainform2.Show();
+
+        }
+
+        private void design1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            showfashionform3 showfasionform4 = new showfashionform3();
+            showfasionform4.Show();
 
         }
     }
 }
+

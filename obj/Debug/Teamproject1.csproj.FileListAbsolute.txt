@@ -82,3 +82,6 @@ C:\Users\cowha\Source\Repos\kimsohee72\TeamProject4\obj\Debug\Teamproject1.cspro
 C:\Users\cowha\Source\Repos\kimsohee72\TeamProject4\obj\Debug\Teamproject1.csproj.CopyComplete
 C:\Users\cowha\Source\Repos\kimsohee72\TeamProject4\obj\Debug\Teamproject1.exe
 C:\Users\cowha\Source\Repos\kimsohee72\TeamProject4\obj\Debug\Teamproject1.pdb
+C:\Users\cowha\source\repos\kimsohee72\TeamProject4\obj\Debug\Teamproject1.logincompleted1.resources
+C:\Users\cowha\source\repos\kimsohee72\TeamProject4\obj\Debug\Teamproject1.loginfailed1.resources
+C:\Users\cowha\source\repos\kimsohee72\TeamProject4\obj\Debug\Teamproject1.favorite.resources

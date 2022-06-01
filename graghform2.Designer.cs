@@ -42,12 +42,9 @@ namespace Teamproject1
             this.agespecific = new System.Windows.Forms.Button();
             this.seasonspecific = new System.Windows.Forms.Button();
             this.design1 = new System.Windows.Forms.Button();
-            this.design2 = new System.Windows.Forms.Button();
-            this.journeylook = new System.Windows.Forms.Button();
-            this.datelook = new System.Windows.Forms.Button();
-            this.weddinglook = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,7 +63,7 @@ namespace Teamproject1
             // 
             // graphformcopy1
             // 
-            this.graphformcopy1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.graphformcopy1.Font = new System.Drawing.Font("카페24 써라운드", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.graphformcopy1.Location = new System.Drawing.Point(15, 385);
             this.graphformcopy1.Margin = new System.Windows.Forms.Padding(4);
             this.graphformcopy1.Name = "graphformcopy1";
@@ -77,7 +74,7 @@ namespace Teamproject1
             // 
             // graphformcopy2
             // 
-            this.graphformcopy2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.graphformcopy2.Font = new System.Drawing.Font("카페24 써라운드 에어 ", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.graphformcopy2.Location = new System.Drawing.Point(15, 475);
             this.graphformcopy2.Margin = new System.Windows.Forms.Padding(4);
             this.graphformcopy2.Name = "graphformcopy2";
@@ -100,7 +97,7 @@ namespace Teamproject1
             // 
             // malefashion
             // 
-            this.malefashion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.malefashion.Font = new System.Drawing.Font("카페24 써라운드", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.malefashion.Location = new System.Drawing.Point(34, 665);
             this.malefashion.Margin = new System.Windows.Forms.Padding(4);
             this.malefashion.Name = "malefashion";
@@ -111,7 +108,7 @@ namespace Teamproject1
             // 
             // femalefashion
             // 
-            this.femalefashion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.femalefashion.Font = new System.Drawing.Font("카페24 써라운드", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.femalefashion.Location = new System.Drawing.Point(192, 665);
             this.femalefashion.Margin = new System.Windows.Forms.Padding(4);
             this.femalefashion.Name = "femalefashion";
@@ -122,7 +119,7 @@ namespace Teamproject1
             // 
             // agespecific
             // 
-            this.agespecific.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.agespecific.Font = new System.Drawing.Font("카페24 써라운드", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.agespecific.Location = new System.Drawing.Point(349, 665);
             this.agespecific.Margin = new System.Windows.Forms.Padding(4);
             this.agespecific.Name = "agespecific";
@@ -133,7 +130,7 @@ namespace Teamproject1
             // 
             // seasonspecific
             // 
-            this.seasonspecific.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.seasonspecific.Font = new System.Drawing.Font("카페24 써라운드", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.seasonspecific.Location = new System.Drawing.Point(508, 665);
             this.seasonspecific.Margin = new System.Windows.Forms.Padding(4);
             this.seasonspecific.Name = "seasonspecific";
@@ -144,62 +141,19 @@ namespace Teamproject1
             // 
             // design1
             // 
-            this.design1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.design1.Location = new System.Drawing.Point(15, 839);
+            this.design1.Font = new System.Drawing.Font("카페24 써라운드", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.design1.Location = new System.Drawing.Point(177, 839);
             this.design1.Margin = new System.Windows.Forms.Padding(4);
             this.design1.Name = "design1";
             this.design1.Size = new System.Drawing.Size(294, 53);
             this.design1.TabIndex = 9;
             this.design1.Text = "새로운 패션 추천";
             this.design1.UseVisualStyleBackColor = true;
-            // 
-            // design2
-            // 
-            this.design2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.design2.Location = new System.Drawing.Point(536, 864);
-            this.design2.Margin = new System.Windows.Forms.Padding(4);
-            this.design2.Name = "design2";
-            this.design2.Size = new System.Drawing.Size(94, 28);
-            this.design2.TabIndex = 10;
-            this.design2.Text = "더보기";
-            this.design2.UseVisualStyleBackColor = true;
-            // 
-            // journeylook
-            // 
-            this.journeylook.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.journeylook.Location = new System.Drawing.Point(34, 962);
-            this.journeylook.Margin = new System.Windows.Forms.Padding(4);
-            this.journeylook.Name = "journeylook";
-            this.journeylook.Size = new System.Drawing.Size(150, 176);
-            this.journeylook.TabIndex = 11;
-            this.journeylook.Text = "여행을 떠나볼까요? 여행룩";
-            this.journeylook.UseVisualStyleBackColor = true;
-            // 
-            // datelook
-            // 
-            this.datelook.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.datelook.Location = new System.Drawing.Point(244, 962);
-            this.datelook.Margin = new System.Windows.Forms.Padding(4);
-            this.datelook.Name = "datelook";
-            this.datelook.Size = new System.Drawing.Size(156, 180);
-            this.datelook.TabIndex = 12;
-            this.datelook.Text = "데이트룩 추천받아요~";
-            this.datelook.UseVisualStyleBackColor = true;
-            // 
-            // weddinglook
-            // 
-            this.weddinglook.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.weddinglook.Location = new System.Drawing.Point(459, 962);
-            this.weddinglook.Margin = new System.Windows.Forms.Padding(4);
-            this.weddinglook.Name = "weddinglook";
-            this.weddinglook.Size = new System.Drawing.Size(159, 180);
-            this.weddinglook.TabIndex = 13;
-            this.weddinglook.Text = "결혼식 갈 때 뭐입지?";
-            this.weddinglook.UseVisualStyleBackColor = true;
+            this.design1.Click += new System.EventHandler(this.design1_Click);
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button1.Font = new System.Drawing.Font("카페24 써라운드", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(275, 594);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
@@ -231,18 +185,25 @@ namespace Teamproject1
             title1.Text = "기온그래프";
             this.chart1.Titles.Add(title1);
             // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("카페24 써라운드", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox1.Location = new System.Drawing.Point(96, 37);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(189, 41);
+            this.textBox1.TabIndex = 16;
+            this.textBox1.Text = "날씨에 맞는 옷";
+            // 
             // graghform2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(662, 1050);
+            this.ClientSize = new System.Drawing.Size(662, 919);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.weddinglook);
-            this.Controls.Add(this.datelook);
-            this.Controls.Add(this.journeylook);
-            this.Controls.Add(this.design2);
             this.Controls.Add(this.design1);
             this.Controls.Add(this.seasonspecific);
             this.Controls.Add(this.agespecific);
@@ -259,6 +220,7 @@ namespace Teamproject1
             this.Load += new System.EventHandler(this.graghform_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -273,11 +235,8 @@ namespace Teamproject1
         private System.Windows.Forms.Button agespecific;
         private System.Windows.Forms.Button seasonspecific;
         private System.Windows.Forms.Button design1;
-        private System.Windows.Forms.Button design2;
-        private System.Windows.Forms.Button journeylook;
-        private System.Windows.Forms.Button datelook;
-        private System.Windows.Forms.Button weddinglook;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
