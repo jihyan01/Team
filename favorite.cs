@@ -23,7 +23,14 @@ namespace Teamproject1
         private void favorite_Load(object sender, EventArgs e)
         {
             MySqlConnection connection = mysql.Connection();
-            string sql = "select ";
+            string sql = "select * from login";
+
+            connection.Open();
+            MySqlCommand cmd = new MySqlCommand(sql, connection);
+            MySqlDataReader reader = new MySqlCommand(sql, connection).ExecuteReader();
+
+            textBox1.Text += reader[3].ToString() + "\r\n";
+            
         }
     }
 }

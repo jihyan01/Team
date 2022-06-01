@@ -185,6 +185,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "showfashionform3";
             this.Text = "showfashionform";
+            this.Load += new System.EventHandler(this.showfashionform3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.expicture1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.expicture2)).EndInit();
             this.ResumeLayout(false);

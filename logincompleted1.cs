@@ -19,7 +19,8 @@ namespace Teamproject1
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            favorite favorite = new favorite();
+            favorite.Show();
         }
     }
 }
